@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regalo para ti 💝</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+
+    <div class="container">
+        <!-- Pantalla de Bienvenida -->
+        <div class="gift-card welcome-screen" id="welcomeScreen">
+            <h1>Hola preciosa tienes un detalle</h1>
+            
+            <div class="emoji-big">🎁</div>
+            
+            <div class="message">
+                Tengo un <span class="highlight">regalo especial</span> preparado solo para ti! 💝<br>
+                Por favor, pon tu <span class="highlight">nombre</span> para que pueda entregarte este detalle.
+            </div>
+            
+            <div class="name-input-container">
+                <input type="text" class="name-input" id="nameInput" placeholder="Ingresa tu nombre..." maxlength="20">
+            </div>
+            
+            <div class="button-container">
+                <button class="cute-button" onclick="showGift()">🎪 Ver mi regalo</button>
+            </div>
+              <div class="button-container">
+                <button class="cute-button" onclick="showGift()">Yeiiii</button>
+            </div>
+        </div>
+
+        <!-- Pantalla de Regalo -->
+        <div class="gift-card gift-screen" id="giftScreen">
+            <h1>Para ti <span id="userName" class="highlight text-danger"></span></h1>
+            <div class="emoji-big">🎁</div>
+            
+            <div class="photo-frame">
+                <img src="heart.png" alt="" width="200px" style="border-radius: 50%;">
+            </div>
+            
+            <div class="message" id="giftMessage">
+                Para <span class="highlight" id="userNameInMessage"></span> - ¡mi Amor! 💕<br>
+                Gracias por estar siempre ahí, compartiendo momentos de <span class="highlight">alegría y tristeza</span> conmigo.<br>
+                Nuestro amoor es realmente <span class="highlight">especial</span> y valiosa para mi! ✨
+            </div>
+            <div class="surprise-text" id="surpriseText">
+                🎉 ¡Otro detalle para <span id="userNameInSurprise" class="highlight"></span>!<br> 
+                Prisa por llegar, prisa por partir, prisa por desvanecerse <br>
+                Prisa por reunirse, prisa por separarse. <br>
+                Prisa por comer, prisa por hablar, prisa por respirar <br>
+                Prisa por disfrutar rápido para envejecer pronto.<br><br>
+
+                Prisa por nacer, prisa por morir, prisa por una vida <br>
+                Prisa por reír, prisa por llorar, prisa por soltar. <br>
+                Prisa por amar, prisa por odiar, ¡mirarse como extraños! <br>
+                Prisa por encontrarse, prisa por agotarse…<br><br>
+
+                Prisa por tantas vidas y aún con prisa <br>
+                Persiguiendo la felicidad al final del horizonte. <br>
+                Fuera, en el porche, no se ven las rosas florecer <br>
+                Prisa por el día, prisa por el mes, prisa por el año que pasa.<br><br>
+
+                Así, durante milenios, la vida sigue con prisa <br>
+                Rostros de antaño que ya no se recuerdan. <br>
+                “Buscando la luna en el fondo del agua” y aún nadando <br>
+                Prisa por despertar, prisa por soñar, prisa por cabecear...<br><br>
+
+                Prisa por olvidar, prisa por recordar, prisa por ir y venir <br>
+                De un lado a otro, ¡qué lejos parece! <br>
+                ¿Alguien en el camino del despertar con pasos apresurados? <br>
+                Escapar del “pantano ardiente”, dejando atrás las aflicciones.<br>
+            </div>
+            <div class="button-container">
+                
+                <button class="cute-button" onclick="changeMessage()">📝 Sigue leyendo</button>
+                <button class="cute-button" onclick="showSurprise()">🌟 Te regalo un poema 😊</button>
+            </div>
+            <button class="cute-button" onclick="goBack()">🔙 Volver</button>
+            
+        </div>
+    </div>
+</body>
+</html>
